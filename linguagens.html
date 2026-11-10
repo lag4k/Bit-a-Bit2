@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compare as principais linguagens de programação para iniciantes.">
+  <title>Linguagens | Bit a Bit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topo">
+    <div class="wrap topo-in">
+      <a class="logo" href="index.html"><span class="logo-bit">01</span> Bit a Bit</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav id="menu" class="menu" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="linguagens.html" aria-current="page">Linguagens</a>
+        <a href="tutoriais.html">Tutoriais</a>
+        <a href="ferramentas.html">Ferramentas</a>
+        <a href="sobre.html">Sobre</a>
+        <button class="tema-btn" id="temaBtn" type="button">Modo escuro</button>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+
+    <section class="wrap cab">
+      <h1>Linguagens de programação</h1>
+      <p class="lead">Não existe a melhor linguagem, e sim a mais adequada ao que você quer construir.</p>
+    </section>
+
+    <section class="wrap grade">
+      <article class="card destaque">
+        <h2>Python</h2>
+        <p>Sintaxe limpa e leitura quase natural. É a escolha mais comum para primeiro contato e domina áreas como ciência de dados e automação.</p>
+        <pre><code>for i in range(3):
+    print("Olá!", i)</code></pre>
+      </article>
+      <article class="card">
+        <h2>JavaScript</h2>
+        <p>A linguagem da web: roda no navegador e também no servidor com Node.js.</p>
+        <pre><code>let soma = 2 + 3;
+alert(soma);</code></pre>
+      </article>
+      <article class="card">
+        <h2>Java</h2>
+        <p>Muito usada em sistemas corporativos e apps Android. Exige mais regras, o que ajuda a entender orientação a objetos.</p>
+        <pre><code>System.out.println("Olá!");</code></pre>
+      </article>
+      <article class="card">
+        <h2>C#</h2>
+        <p>Linguagem da Microsoft para aplicativos desktop, jogos com Unity e serviços web.</p>
+        <pre><code>Console.WriteLine("Olá!");</code></pre>
+      </article>
+    </section>
+
+    <section class="wrap bloco">
+      <h2>Comparativo rápido</h2>
+      <div class="tabela-rolagem">
+        <table>
+          <caption>Comparação entre as linguagens apresentadas</caption>
+          <thead><tr><th scope="col">Linguagem</th><th scope="col">Uso principal</th><th scope="col">Dificuldade inicial</th><th scope="col">Tipagem</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Python</th><td>Dados, automação, IA</td><td>Baixa</td><td>Dinâmica</td></tr>
+            <tr><th scope="row">JavaScript</th><td>Web (front e back-end)</td><td>Média</td><td>Dinâmica</td></tr>
+            <tr><th scope="row">Java</th><td>Sistemas corporativos, Android</td><td>Média a alta</td><td>Estática</td></tr>
+            <tr><th scope="row">C#</th><td>Desktop, jogos, web</td><td>Média</td><td>Estática</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+  <footer class="rodape">
+    <div class="wrap rodape-in">
+      <p><strong>Bit a Bit</strong> – projeto acadêmico de HTML, CSS e JavaScript.</p>
+      <p>Páginas: <a href="index.html">Início</a> &middot; <a href="linguagens.html">Linguagens</a> &middot; <a href="tutoriais.html">Tutoriais</a> &middot; <a href="ferramentas.html">Ferramentas</a> &middot; <a href="sobre.html">Sobre</a></p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

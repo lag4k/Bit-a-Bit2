@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sobre o projeto Bit a Bit e formulário de contato.">
+  <title>Sobre | Bit a Bit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topo">
+    <div class="wrap topo-in">
+      <a class="logo" href="index.html"><span class="logo-bit">01</span> Bit a Bit</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav id="menu" class="menu" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="linguagens.html">Linguagens</a>
+        <a href="tutoriais.html">Tutoriais</a>
+        <a href="ferramentas.html">Ferramentas</a>
+        <a href="sobre.html" aria-current="page">Sobre</a>
+        <button class="tema-btn" id="temaBtn" type="button">Modo escuro</button>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+
+    <section class="wrap cab">
+      <h1>Sobre o projeto</h1>
+      <p class="lead">O Bit a Bit nasceu como trabalho de faculdade para praticar HTML, CSS e JavaScript na construção de um site com várias páginas.</p>
+    </section>
+
+    <section class="wrap duas">
+      <div>
+        <h2>Objetivos</h2>
+        <ul class="lista">
+          <li>Aplicar HTML semântico em páginas conectadas por um menu.</li>
+          <li>Usar CSS com Flexbox, Grid e design responsivo.</li>
+          <li>Adicionar interações simples com JavaScript.</li>
+        </ul>
+        <h2>Tecnologias usadas</h2>
+        <p>HTML5, CSS3 (variáveis, grid, media queries) e JavaScript puro, sem bibliotecas.</p>
+        <h2>Autor</h2>
+        <p>Emanoel Loiola &ndash; estudante de Ciências da Computação.</p>
+      </div>
+
+      <form class="form" id="formContato" novalidate>
+        <h2>Fale conosco</h2>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" autocomplete="name">
+        <p class="erro" id="erro-nome"></p>
+
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="email" autocomplete="email">
+        <p class="erro" id="erro-email"></p>
+
+        <label for="msg">Mensagem</label>
+        <textarea id="msg" name="msg" rows="5"></textarea>
+        <p class="erro" id="erro-msg"></p>
+
+        <button class="btn" type="submit">Enviar mensagem</button>
+        <p class="ok" id="okForm" role="status"></p>
+      </form>
+    </section>
+
+  </main>
+  <footer class="rodape">
+    <div class="wrap rodape-in">
+      <p><strong>Bit a Bit</strong> – projeto acadêmico de HTML, CSS e JavaScript.</p>
+      <p>Páginas: <a href="index.html">Início</a> &middot; <a href="linguagens.html">Linguagens</a> &middot; <a href="tutoriais.html">Tutoriais</a> &middot; <a href="ferramentas.html">Ferramentas</a> &middot; <a href="sobre.html">Sobre</a></p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

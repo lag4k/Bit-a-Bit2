@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tutoriais curtos de programação para iniciantes e nível intermediário.">
+  <title>Tutoriais | Bit a Bit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topo">
+    <div class="wrap topo-in">
+      <a class="logo" href="index.html"><span class="logo-bit">01</span> Bit a Bit</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav id="menu" class="menu" aria-label="Principal">
+        <a href="index.html">Início</a>
+        <a href="linguagens.html">Linguagens</a>
+        <a href="tutoriais.html" aria-current="page">Tutoriais</a>
+        <a href="ferramentas.html">Ferramentas</a>
+        <a href="sobre.html">Sobre</a>
+        <button class="tema-btn" id="temaBtn" type="button">Modo escuro</button>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+
+    <section class="wrap cab">
+      <h1>Tutoriais</h1>
+      <p class="lead">Aulas rápidas com exemplo de código. Filtre pelo seu nível.</p>
+      <div class="filtros" role="group" aria-label="Filtrar por nível">
+        <button class="filtro ativo" data-filtro="todos" type="button">Todos</button>
+        <button class="filtro" data-filtro="iniciante" type="button">Iniciante</button>
+        <button class="filtro" data-filtro="intermediario" type="button">Intermediário</button>
+      </div>
+    </section>
+    <section class="wrap lista-tuts" id="listaTuts">
+      <article class="tut" data-nivel="iniciante">
+        <div class="tut-info">
+          <h3>Seu primeiro HTML</h3>
+          <p class="meta"><span class="selo iniciante">Iniciante</span> 15 min</p>
+          <p>Crie uma página com título, parágrafo e link usando apenas tags básicas.</p>
+        </div>
+        <pre><code><h1>Olá, mundo!</h1>
+<p>Minha primeira página.</p></code></pre>
+      </article>
+      <article class="tut" data-nivel="iniciante">
+        <div class="tut-info">
+          <h3>Variáveis e tipos de dados</h3>
+          <p class="meta"><span class="selo iniciante">Iniciante</span> 20 min</p>
+          <p>Guarde textos, números e valores verdadeiro/falso e aprenda a usá-los.</p>
+        </div>
+        <pre><code>let idade = 20;
+let nome = "Ana";
+let aluno = true;</code></pre>
+      </article>
+      <article class="tut" data-nivel="iniciante">
+        <div class="tut-info">
+          <h3>Condições com if e else</h3>
+          <p class="meta"><span class="selo iniciante">Iniciante</span> 20 min</p>
+          <p>Faça o programa tomar decisões com base em uma comparação.</p>
+        </div>
+        <pre><code>if (nota >= 7) {
+  console.log("Aprovado");
+} else {
+  console.log("Em recuperação");
+}</code></pre>
+      </article>
+      <article class="tut" data-nivel="intermediario">
+        <div class="tut-info">
+          <h3>Layout com Flexbox</h3>
+          <p class="meta"><span class="selo intermediario">Intermediário</span> 30 min</p>
+          <p>Alinhe e distribua elementos em linha ou coluna sem usar float.</p>
+        </div>
+        <pre><code>.menu {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}</code></pre>
+      </article>
+      <article class="tut" data-nivel="intermediario">
+        <div class="tut-info">
+          <h3>Manipulando o DOM</h3>
+          <p class="meta"><span class="selo intermediario">Intermediário</span> 35 min</p>
+          <p>Selecione elementos da página e altere o conteúdo com JavaScript.</p>
+        </div>
+        <pre><code>const titulo = document.querySelector('h1');
+titulo.textContent = 'Novo título';</code></pre>
+      </article>
+      <article class="tut" data-nivel="intermediario">
+        <div class="tut-info">
+          <h3>Primeiros comandos do Git</h3>
+          <p class="meta"><span class="selo intermediario">Intermediário</span> 25 min</p>
+          <p>Inicie um repositório e registre seu primeiro commit.</p>
+        </div>
+        <pre><code>git init
+git add .
+git commit -m "Primeiro commit"</code></pre>
+      </article>
+    </section>
+
+  </main>
+  <footer class="rodape">
+    <div class="wrap rodape-in">
+      <p><strong>Bit a Bit</strong> – projeto acadêmico de HTML, CSS e JavaScript.</p>
+      <p>Páginas: <a href="index.html">Início</a> &middot; <a href="linguagens.html">Linguagens</a> &middot; <a href="tutoriais.html">Tutoriais</a> &middot; <a href="ferramentas.html">Ferramentas</a> &middot; <a href="sobre.html">Sobre</a></p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

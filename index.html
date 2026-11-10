@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Aprenda programação passo a passo: linguagens, tutoriais e ferramentas.">
+  <title>Início | Bit a Bit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <header class="topo">
+    <div class="wrap topo-in">
+      <a class="logo" href="index.html"><span class="logo-bit">01</span> Bit a Bit</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+      <nav id="menu" class="menu" aria-label="Principal">
+        <a href="index.html" aria-current="page">Início</a>
+        <a href="linguagens.html">Linguagens</a>
+        <a href="tutoriais.html">Tutoriais</a>
+        <a href="ferramentas.html">Ferramentas</a>
+        <a href="sobre.html">Sobre</a>
+        <button class="tema-btn" id="temaBtn" type="button">Modo escuro</button>
+      </nav>
+    </div>
+  </header>
+  <main id="conteudo">
+
+    <section class="hero">
+      <div class="wrap hero-in">
+        <div class="hero-txt">
+          <h1>Aprenda a programar um bit de cada vez.</h1>
+          <p class="lead">Um guia para trilhar o caminho de um Dev que está começando: escolha uma linguagem, siga um tutorial curto e monte seu ambiente com as ferramentas certas.</p>
+          <div class="botoes">
+            <a class="btn" href="tutoriais.html">Começar um tutorial</a>
+            <a class="btn btn-sec" href="linguagens.html">Comparar linguagens</a>
+          </div>
+        </div>
+        <figure class="editor" aria-label="Exemplo de código">
+          <div class="editor-barra"><span></span><span></span><span></span><b>ola.js</b></div>
+<pre><code id="digitando" data-texto="const nome = 'Mundo';
+function saudar(pessoa) {
+  return `Olá, ${pessoa}!`;
+}
+console.log(saudar(nome));
+// Saída: Olá, Mundo!">const nome = 'Mundo';
+function saudar(pessoa) {
+  return `Olá, ${pessoa}!`;
+}
+console.log(saudar(nome));
+// Saída: Olá, Mundo!</code></pre>
+        </figure>
+      </div>
+    </section>
+
+    <section class="wrap bloco">
+      <h2>O que você encontra aqui</h2>
+      <div class="trio">
+        <a class="item" href="linguagens.html"><h3>Linguagens</h3><p>Python, JavaScript, Java e C#: para que serve cada uma e qual é mais fácil de começar.</p></a>
+        <a class="item" href="tutoriais.html"><h3>Tutoriais</h3><p>Aulas curtas separadas por nível, com exemplos de código prontos para copiar.</p></a>
+        <a class="item" href="ferramentas.html"><h3>Ferramentas</h3><p>Editor, Git, navegador e outras ferramentas que todo programador usa no dia a dia.</p></a>
+      </div>
+    </section>
+
+    <section class="wrap bloco">
+      <h2>Trilha sugerida para iniciantes</h2>
+      <p class="sub">A ordem importa: cada etapa prepara a próxima.</p>
+      <ol class="trilha">
+        <li><strong>Lógica de programação</strong> Variáveis, condições e laços de repetição.</li>
+        <li><strong>HTML e CSS</strong> Estrutura e aparência de páginas web.</li>
+        <li><strong>JavaScript</strong> Interatividade no navegador.</li>
+        <li><strong>Git e GitHub</strong> Versionamento e portfólio online.</li>
+        <li><strong>Projeto próprio</strong> Um site ou app pequeno, do começo ao fim.</li>
+      </ol>
+    </section>
+
+  </main>
+  <footer class="rodape">
+    <div class="wrap rodape-in">
+      <p><strong>Bit a Bit</strong> – projeto acadêmico de HTML, CSS e JavaScript.</p>
+      <p>Páginas: <a href="index.html">Início</a> &middot; <a href="linguagens.html">Linguagens</a> &middot; <a href="tutoriais.html">Tutoriais</a> &middot; <a href="ferramentas.html">Ferramentas</a> &middot; <a href="sobre.html">Sobre</a></p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
